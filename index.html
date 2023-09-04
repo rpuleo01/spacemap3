@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Gephi Graph</title>
+</head>
+<body>
+    <h1>Your Gephi Graph</h1>
+    <div id="gephi-graph"></div>
+
+    <!-- Include a library to render the Gephi file (e.g., Sigma.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/2.1.2/sigma.min.js"></script>
+    <script>
+        // Load and render your Gephi file using JavaScript
+        sigma.parsers.gexf('SpaceMap.gexf', {
+            container: 'gephi-graph'
+        });
+    </script>
+</body>
+</html>
